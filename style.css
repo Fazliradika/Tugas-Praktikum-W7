@@ -413,6 +413,18 @@ html {
     display: none;
 }
 
+/* Telkom logo inside content cards */
+.icon-header img.telkom-logo {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    object-fit: contain;
+    border: 2px solid rgba(255,255,255,0.06);
+    box-shadow: 0 6px 20px rgba(13,110,253,0.08);
+}
+
 .section-title {
     font-size: 2rem;
     font-weight: 700;
@@ -467,48 +479,7 @@ html {
     box-shadow: 0 0 15px var(--cyber-yellow);
 }
 
-.service-item {
-    padding: 1.5rem;
-    background: rgba(13,110,253,0.02);
-    border: 1px solid rgba(13,110,253,0.06);
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-
-.service-item:hover {
-    background: rgba(13,110,253,0.06);
-    transform: translateX(10px);
-    border-color: var(--cyber-green);
-    box-shadow: 0 0 20px rgba(13,110,253,0.12);
-}
-
-.service-icon {
-    width: 50px;
-    height: 50px;
-    background: transparent;
-    border: 2px solid var(--cyber-green);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    box-shadow: 0 0 12px rgba(13,110,253,0.12);
-}
-
-.service-icon i {
-    font-size: 1.5rem;
-    color: var(--cyber-blue);
-    text-shadow: 0 0 10px var(--cyber-blue);
-}
-
-.service-item h5 {
-    color: var(--text-primary);
-    font-weight: 600;
-}
-
-.service-item .text-muted {
-    color: var(--text-secondary) !important;
-}
+/* services removed */
 
 .portfolio-section {
     padding: 4rem 0;
@@ -524,9 +495,16 @@ html {
 }
 
 .section-subtitle {
-    color: var(--text-secondary);
+    /* gradient text from white to black (clipped to text) */
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
     font-size: 1.1rem;
-    text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+    display: inline-block;
+    /* subtle glow to help the white part pop on dark backgrounds */
+    text-shadow: 0 0 8px rgba(255,255,255,0.05);
 }
 
 .portfolio-card {
@@ -616,40 +594,21 @@ html {
 }
 
 .footer-title {
-    color: var(--cyber-green);
+    /* make footer titles readable on dark footer background */
+    color: var(--text-light);
     font-weight: 600;
     font-size: 1.2rem;
     text-shadow: 0 0 10px rgba(13,110,253,0.18);
 }
 
 .footer-text {
-    color: var(--text-secondary);
+    /* make footer text readable on the dark background */
+    color: var(--text-light);
     line-height: 1.8;
     font-size: 0.95rem;
 }
 
-.footer-links {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links li {
-    margin-bottom: 0.75rem;
-}
-
-.footer-links a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-}
-
-.footer-links a:hover {
-    color: var(--cyber-green);
-    transform: translateX(5px);
-    text-shadow: 0 0 10px var(--cyber-green);
-}
+/* footer quick menu removed */
 
 .social-links {
     display: flex;
@@ -683,13 +642,61 @@ html {
     border-top: 1px solid rgba(13,110,253,0.12);
 }
 
+/* Feedback form styles (non-functional) */
+.feedback-form {
+    margin-top: 1rem;
+}
+.feedback-input {
+    width: 100%;
+    min-height: 64px;
+    resize: none;
+    padding: 0.6rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.02);
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+.feedback-actions { margin-top: 0.5rem; }
+.btn-feedback {
+    background: var(--cyber-blue);
+    color: #fff;
+    padding: 0.45rem 0.9rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+.btn-feedback:hover { opacity: 0.95; }
+
+/* compact bottom feedback */
+.feedback-form-bottom {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.6rem;
+}
+.feedback-input-bottom {
+    width: 60%;
+    max-width: 420px;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.02);
+    color: var(--text-light);
+}
+.btn-feedback-small { padding: 0.35rem 0.6rem; }
+
+.visually-hidden { position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px); white-space: nowrap; }
+
 /* make the small footer credit text explicitly white for contrast on dark background */
 .footer-bottom .footer-text {
     color: var(--text-light);
 }
 
 .copyright-text {
-    color: var(--text-secondary);
+    /* explicitly make copyright text white for better contrast */
+    color: var(--text-light);
     font-size: 0.9rem;
 }
 

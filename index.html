@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Age verification blocking style: page hidden until external script removes this -->
+    <style id="__age_block_style">body > *{display:none !important}</style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +17,7 @@
             <div class="container">
                 <a class="navbar-brand logo-brand" href="#">
                     <i class="fas fa-code"></i>
-                    <span>Fazli.dev</span>
+                    <span>Fazli Radika</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -28,9 +30,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
-                        </li>
+                        <!-- Services nav link removed -->
                         <li class="nav-item">
                             <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
@@ -134,63 +134,19 @@
                     <div class="col-lg-6 col-md-12 mb-4">
                         <div class="content-card glass-effect">
                             <div class="icon-header">
-                                <i class="fas fa-cogs"></i>
+                                <img src="Logo Vertikal Telkom University.png" alt="Telkom University Logo" class="telkom-logo" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+                                <i class="fas fa-university"></i>
                             </div>
-                            <h2 class="section-title mb-4">Layanan Pemrograman Web</h2>
-                            <div class="service-list">
-                                <div class="service-item mb-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="service-icon me-3">
-                                            <i class="fas fa-code"></i>
-                                        </div>
-                                        <div>
-                                            <h5 class="mb-2">Secure Web Development</h5>
-                                            <p class="text-muted mb-0">
-                                                Membangun website dengan standar keamanan tinggi, enkripsi data, dan perlindungan terhadap serangan cyber.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="service-item mb-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="service-icon me-3">
-                                            <i class="fas fa-bug"></i>
-                                        </div>
-                                        <div>
-                                            <h5 class="mb-2">Penetration Testing</h5>
-                                            <p class="text-muted mb-0">
-                                                Melakukan pengujian keamanan aplikasi untuk mengidentifikasi dan memperbaiki celah keamanan.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="service-item mb-4">
-                                    <div class="d-flex align-items-start">
-                                        <div class="service-icon me-3">
-                                            <i class="fas fa-search"></i>
-                                        </div>
-                                        <div>
-                                            <h5 class="mb-2">Security Audit</h5>
-                                            <p class="text-muted mb-0">
-                                                Audit keamanan menyeluruh untuk sistem dan aplikasi dengan rekomendasi perbaikan yang detail.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="service-item">
-                                    <div class="d-flex align-items-start">
-                                        <div class="service-icon me-3">
-                                            <i class="fas fa-network-wired"></i>
-                                        </div>
-                                        <div>
-                                            <h5 class="mb-2">Network Security</h5>
-                                            <p class="text-muted mb-0">
-                                                Implementasi keamanan jaringan dan monitoring untuk melindungi infrastruktur digital Anda.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <h2 class="section-title mb-4">Profil Telkom University</h2>
+                            <p class="section-text mb-3">
+                                Telkom University merupakan perguruan tinggi swasta yang berdiri di bawah naungan Yayasan Pendidikan Telkom (YPT). Didirikan pada tahun 2013 di Bandung, universitas ini berfokus pada pengembangan ilmu pengetahuan dan inovasi di bidang teknologi, telekomunikasi, dan bisnis digital.
+
+Sebagai world-class entrepreneurial university, Telkom University berkomitmen mencetak lulusan yang unggul dalam teknologi serta memiliki jiwa kepemimpinan dan kewirausahaan tinggi. Dengan dukungan fasilitas modern dan kolaborasi industri yang kuat, Tel-U menjadi salah satu universitas terbaik di Indonesia dalam bidang teknologi dan inovasi digital.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li><strong>Lokasi:</strong> Bandung, Indonesia</li>
+                                <li><strong>Fokus:</strong> Teknologi, Telekomunikasi, dan Digital Innovation</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -201,7 +157,7 @@
             <div class="container">
                 <div class="text-center mb-5">
                     <h2 class="section-title-main">Proyek Pemrograman Web</h2>
-                    <p class="section-subtitle">Contoh proyek pemrograman web yang saya kembangkan</p>
+                    <p class="section-subtitle">Proyek pemrograman web yang saya kembangkan</p>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6">
@@ -248,49 +204,27 @@
     <footer id="contact" class="footer-section">
         <div class="container">
             <div class="row py-5">
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="col-lg-6 col-md-6 mb-4">
                     <h5 class="footer-title mb-3">
                         <i class="fas fa-code me-2"></i>Zlii
                     </h5>
-                    <p class="footer-text">
-                        Menciptakan website yang indah dan fungsional dengan 
-                        dedikasi penuh terhadap kualitas dan inovasi.
-                    </p>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <h5 class="footer-title mb-3">Menu Cepat</h5>
-                    <ul class="footer-links">
-                        <li><a href="#home"><i class="fas fa-chevron-right me-2"></i>Home</a></li>
-                        <li><a href="#about"><i class="fas fa-chevron-right me-2"></i>About</a></li>
-                        <li><a href="#services"><i class="fas fa-chevron-right me-2"></i>Services</a></li>
-                        <li><a href="#portfolio"><i class="fas fa-chevron-right me-2"></i>Portfolio</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-12 mb-4">
-                    <h5 class="footer-title mb-3">Hubungi Saya</h5>
-                    <div class="social-links">
-                        <a href="#" class="social-link" title="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-link" title="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link" title="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="social-link" title="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="social-link" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
+                    <p class="footer-text">Menciptakan website yang indah dan fungsional dengan</p>
+
+                    <!-- Simple contact form (non-functional) replacing previous card -->
+                    <form class="feedback-form" onsubmit="return false;" aria-label="Form Kontak Footer">
+                        <label for="contact-message" class="visually-hidden">Pesan</label>
+                        <textarea id="contact-message" class="feedback-input" placeholder="Tulis pesanmu di sini..." aria-label="Pesan"></textarea>
+                        <div class="feedback-actions">
+                            <button class="btn-feedback" type="submit">Kirim</button>
+                        </div>
+                    </form>
+
                     <div class="mt-4">
                         <p class="footer-text mb-2">
-                            <i class="fas fa-envelope me-2"></i>Fazli.dev@email.com
+                            <i class="fas fa-envelope me-2"></i>fazliradikadika@gmail.com
                         </p>
                         <p class="footer-text">
-                            <i class="fas fa-phone me-2"></i>+62 823 xxxx xxxx
+                            <i class="fas fa-phone me-2"></i>+62821271387787
                         </p>
                     </div>
                 </div>
