@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazli - Web Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand logo-brand" href="#">
+                    <i class="fas fa-code"></i>
+                    <span>Fazli.dev</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-6 col-md-12 text-content">
+                        <h1 class="display-4 fw-bold mb-3 animate-fade-in">
+                            Hi, Saya Fazli
+                        </h1>
+                        <p class="lead mb-4 animate-fade-in-delay">
+                            Web Developer & Cybersecurity Enthusiast. Menciptakan pengalaman digital 
+                            yang aman, modern, dan responsif dengan fokus pada keamanan siber.
+                        </p>
+                        <div class="btn-group-custom animate-fade-in-delay-2">
+                            <a href="#portfolio" class="btn btn-custom btn-primary-custom me-3">
+                                <i class="fas fa-briefcase me-2"></i>Lihat Portfolio
+                            </a>
+                            <a href="#contact" class="btn btn-custom btn-outline-custom">
+                                <i class="fas fa-envelope me-2"></i>Hubungi Saya
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 text-center">
+                        <div class="illustration-box animate-float">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="content-section py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 mb-4">
+                        <div class="content-card glass-effect">
+                            <div class="icon-header">
+                                <img src="Fz.png" alt="Foto Fz" class="profile-img" onerror="this.style.display='none'">
+                                <i class="fas fa-user-circle fallback-icon" aria-hidden="true"></i>
+                            </div>
+                            <h2 class="section-title mb-4">Tentang Saya</h2>
+                            <p class="section-text mb-3">
+                                Saya sedang mempelajari pemrograman web dengan fokus pada HTML, CSS, Bootstrap, dan JavaScript. 
+                                Tujuan saya membangun antarmuka yang responsif, aksesibel, dan mudah dipelihara. Saya menerapkan
+                                praktik terbaik (clean markup, komponen yang dapat digunakan ulang, dan optimisasi performa)
+                                pada setiap proyek agar hasilnya profesional dan siap produksi.
+                            </p>
+                            <div class="skills-section mt-4">
+                                <h5 class="mb-3">Skills & Expertise</h5>
+                                <div class="skill-item mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span>HTML</span>
+                                        <span class="text-muted">95%</span>
+                                    </div>
+                                    <div class="progress" style="height: 8px;">
+                                        <div class="progress-bar bg-gradient-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span>CSS</span>
+                                        <span class="text-muted">92%</span>
+                                    </div>
+                                    <div class="progress" style="height: 8px;">
+                                        <div class="progress-bar bg-gradient-secondary" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style="width:92%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span>Bootstrap</span>
+                                        <span class="text-muted">90%</span>
+                                    </div>
+                                    <div class="progress" style="height: 8px;">
+                                        <div class="progress-bar bg-gradient-accent" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item mb-3">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <span>JavaScript</span>
+                                        <span class="text-muted">88%</span>
+                                    </div>
+                                    <div class="progress" style="height: 8px;">
+                                        <div class="progress-bar bg-gradient-tertiary" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width:88%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 mb-4">
+                        <div class="content-card glass-effect">
+                            <div class="icon-header">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h2 class="section-title mb-4">Layanan Pemrograman Web</h2>
+                            <div class="service-list">
+                                <div class="service-item mb-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="service-icon me-3">
+                                            <i class="fas fa-code"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-2">Secure Web Development</h5>
+                                            <p class="text-muted mb-0">
+                                                Membangun website dengan standar keamanan tinggi, enkripsi data, dan perlindungan terhadap serangan cyber.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-item mb-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="service-icon me-3">
+                                            <i class="fas fa-bug"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-2">Penetration Testing</h5>
+                                            <p class="text-muted mb-0">
+                                                Melakukan pengujian keamanan aplikasi untuk mengidentifikasi dan memperbaiki celah keamanan.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-item mb-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="service-icon me-3">
+                                            <i class="fas fa-search"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-2">Security Audit</h5>
+                                            <p class="text-muted mb-0">
+                                                Audit keamanan menyeluruh untuk sistem dan aplikasi dengan rekomendasi perbaikan yang detail.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-item">
+                                    <div class="d-flex align-items-start">
+                                        <div class="service-icon me-3">
+                                            <i class="fas fa-network-wired"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-2">Network Security</h5>
+                                            <p class="text-muted mb-0">
+                                                Implementasi keamanan jaringan dan monitoring untuk melindungi infrastruktur digital Anda.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title-main">Proyek Pemrograman Web</h2>
+                    <p class="section-subtitle">Contoh proyek pemrograman web yang saya kembangkan</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-card glass-effect">
+                            <div class="portfolio-image">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                            <div class="portfolio-content">
+                                <h5>Landing Page Responsif</h5>
+                                <p class="text-muted">Desain landing page responsif dengan layout modern dan optimisasi SEO dasar.</p>
+                                <a href="#" class="btn btn-sm btn-custom-sm">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-card glass-effect">
+                            <div class="portfolio-image">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <div class="portfolio-content">
+                                <h5>Situs Responsif (Multi-halaman)</h5>
+                                <p class="text-muted">Situs multi-halaman menggunakan Bootstrap, grid responsif, dan komponen yang dapat digunakan ulang.</p>
+                                <a href="#" class="btn btn-sm btn-custom-sm">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="portfolio-card glass-effect">
+                            <div class="portfolio-image">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="portfolio-content">
+                                <h5>Tugas Besar Toko Online</h5>
+                                <p class="text-muted">Prototype front-end e-commerce dengan keranjang sederhana, responsif pada perangkat mobile.</p>
+                                <a href="#" class="btn btn-sm btn-custom-sm">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer-section">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="footer-title mb-3">
+                        <i class="fas fa-code me-2"></i>Zlii
+                    </h5>
+                    <p class="footer-text">
+                        Menciptakan website yang indah dan fungsional dengan 
+                        dedikasi penuh terhadap kualitas dan inovasi.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="footer-title mb-3">Menu Cepat</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right me-2"></i>Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right me-2"></i>About</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right me-2"></i>Services</a></li>
+                        <li><a href="#portfolio"><i class="fas fa-chevron-right me-2"></i>Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <h5 class="footer-title mb-3">Hubungi Saya</h5>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="mt-4">
+                        <p class="footer-text mb-2">
+                            <i class="fas fa-envelope me-2"></i>Fazli.dev@email.com
+                        </p>
+                        <p class="footer-text">
+                            <i class="fas fa-phone me-2"></i>+62 823 xxxx xxxx
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom py-3">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0 copyright-text">
+                            &copy; 2025 Fazli Portfolio. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="mb-0 footer-text">
+                            Dibuat dengan <i class="fas fa-heart text-danger"></i> oleh Fazli
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
